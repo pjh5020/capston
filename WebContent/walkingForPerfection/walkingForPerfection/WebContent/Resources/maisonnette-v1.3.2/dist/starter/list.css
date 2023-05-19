@@ -1,0 +1,30 @@
+@charset "EUC-KR";
+body {margin: 0; 
+
+
+}
+.main-content container{max-width: 1600px; margin: 0 auto;}
+#reference_list {display: flex; flex-wrap: wrap; }
+#reference_list   > div { vertical-align:right; margin: 0 .5rem;}
+table {display: table; width: 120%; max-width: 120%; border: 1px solid #ddd;}
+table> thead > tr > th {border: 1px solid #ddd; text-align: center;}
+table> tbody > tr > td {border: 1px solid #ddd; text-align: center;}
+input[type="submit"] {
+  background-color: #05cc7c; 
+  color: #fff;     
+  border: none;
+  padding: 10px 15px; 
+  font-size: 10px;
+  font-weight: bold; 
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float: center;
+}
+
+
+.future-button:hover {
+  background-color: rgba(44, 193, 133, 0.4);
+}
+
+

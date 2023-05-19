@@ -1,0 +1,57 @@
+	<!DOCTYPE html>
+	
+	<html>
+	<link rel="stylesheet" href= "list.css"/>
+	<link rel="stylesheet" href= "playCodingPage.css"/>
+	<meta charset="utf-8">
+	<head>
+	    <title>메모장</title>
+	  </head>
+	  <body>
+	   <h2 style="text-align: center;">코딩 테스트</h2>
+	 
+	   
+	  
+	    <form>
+	    
+	
+		 <div  id="sidebar" style="display: inline-block; width: 10%;">
+		
+    <p>언어 선택하기</p>
+       <input type="radio" id="C#" name="선택" value="C#">
+  <label for="C#">C#</label><br>
+  <input type="radio" id="JAVA" name="선택" value="JAVA">
+  <label for="JAVA">JAVA</label><br>
+  <input type="radio" id="Python" name="선택" value="Python">
+  <label for="Python">Python</label><br>
+   <input type="radio" id="JavaScript" name="선택" value="JavaScript">
+  <label for="JavaScript">JavaScript</label><br>
+    
+    
+    </div>
+		 <div  style="display: inline-block; width: 5%;"></div>
+	 	 <div  style="display: inline-block; width: 35%;"><div>문제 :</div>
+	       
+	  <textarea id="memo" name="memo"></textarea></div>
+		 <div  style="display: inline-block; width: 35%;"> <button class="future-button" >컴파일</button>      <button class="future-button">방만들기</button><textarea id="compile" name="compile"></textarea></div>
+		 
+	    </form>
+	    <script>
+	      function saveMemo() {
+	        var memo = document.getElementById("memo").value;
+	        localStorage.setItem("memo", memo);
+	        alert("컴파일");
+	      }
+	
+	      function loadMemo() {
+	        var memo = localStorage.getItem("memo");
+	        if (memo) {
+	          document.getElementById("memo").value = memo;
+	          alert("불러왔습니다.");
+	        } else {
+	          alert("저장된 메모가 없습니다.");
+	        }
+	      }
+	    </script>
+	  </body>
+	</html>
